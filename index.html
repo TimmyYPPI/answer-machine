@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Answer Machine..?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card" role="main">
+    <h1>Answer Machine..?</h1>
+    <p class="lead">Type something sincere, silly, or smug — the machine will answer honestly (and roast you).</p>
+    <form id="qForm" aria-label="Answer Machine form">
+      <div class="input-wrap">
+        <input id="userInput" type="text" placeholder="Type your answer here..." aria-label="Your answer" autocomplete="off" />
+      </div>
+      <button type="submit" class="btn" aria-label="Submit">Ask</button>
+    </form>
+    <div class="output" id="output" aria-live="polite">
+      <span class="muted">No response yet. Try me.</span>
+    </div>
+    <footer>Tip: press Enter to submit • All roasts are algorithmically optional (not really).</footer>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>
