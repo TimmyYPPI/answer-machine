@@ -82,8 +82,8 @@ function makeRoast(text) {
     return '';
   }
 
-  if (trimmed === 'BucketOf42Pufferfish') {
-    return `<span style="color: purple; font-weight: 800; font-size: 18px;">How did you find this code?</span>`;
+  if (lower === 'bucketof42pufferfish') {
+    return `<span class="secret">How did you find this code?</span>`;
   }
 
   const r = roasts[Math.floor(Math.random() * roasts.length)];
