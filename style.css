@@ -86,6 +86,11 @@ input[type="text"]{
   font-size:18px;
   letter-spacing:0.4px;
 }
+.secret {
+  color: purple;
+  font-weight: 800;
+  font-size: 18px;
+}
 .muted{color:var(--muted)}
 footer{margin-top:14px;font-size:13px;color:var(--muted);text-align:right}
 @media (max-width:520px){
