@@ -74,12 +74,20 @@ function escapeHtml(unsafe) {
 }
 
 function makeRoast(text) {
-  if (text.trim().toLowerCase() === 'polugo') {
+  const trimmed = text.trim();
+  const lower = trimmed.toLowerCase();
+
+  if (lower === 'polugo') {
     window.location.href = 'https://www.youtube.com/watch?v=qOqFRrrb8_c';
     return '';
   }
+
+  if (trimmed === 'BucketOf42Pufferfish') {
+    return `<span style="color: purple; font-weight: 800; font-size: 18px;">How did you find this code?</span>`;
+  }
+
   const r = roasts[Math.floor(Math.random() * roasts.length)];
-  const safeText = text.trim() ? `"${escapeHtml(text.trim())}" — ` : '';
+  const safeText = trimmed ? `"${escapeHtml(trimmed)}" — ` : '';
   return `<span class="roast">${safeText}${r}</span>`;
 }
 
